@@ -864,4 +864,51 @@ td,
 th {
   padding: 0; }
 
+/*color de fondo de la pagina*/
+body {
+  background: #E1E2E4; }
+
+/*estilos del header*/
+.header {
+  height: 500px;
+  background: url("../img/header-img.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center; }
+  .header-top {
+    border: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header-top__menu {
+      display: flex; }
+      .header-top__menu .menu-logo {
+        width: 60px;
+        height: 60px;
+        margin-left: 10px; }
+      .header-top__menu .menu-nav {
+        display: flex;
+        margin: 0 0 0 20px; }
+      .header-top__menu .menu-items {
+        list-style: none;
+        margin: 0;
+        padding: 20px 8px 0 8px; }
+      .header-top__menu .menu-link {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+        cursor: pointer; }
+        .header-top__menu .menu-link:hover {
+          color: #E1E2E4; }
+    .header-top__search {
+      margin: 0 10px 0 0; }
+      .header-top__search .search {
+        height: 25px;
+        border: 0;
+        border-radius: 15px;
+        background: rgba(0, 0, 0, 0.16);
+        color: #fff; }
+
 /*# sourceMappingURL=styles.css.map */

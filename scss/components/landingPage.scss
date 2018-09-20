@@ -1,0 +1,55 @@
+/*estilos del header*/
+
+.header {
+  height: 500px;
+  background: url("../img/header-img.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  &-top {
+    border: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__menu {
+      display: flex;
+      .menu {
+        &-logo {
+          width: 60px;
+          height: 60px;
+          margin-left: 10px;
+        }
+        &-nav {
+          display: flex;
+          margin:  0 0 0 20px;
+        }
+        &-items {
+          list-style: none;
+          margin: 0;
+          padding: 20px 8px 0 8px;
+        }
+        &-link {
+          font-family: 'Roboto', sans-serif;
+          font-weight: $regular;
+          color: $blanco;
+          text-align: center;
+          cursor:pointer;
+          &:hover {
+            color: $bg-fondo;
+          }
+        }
+      }
+    }
+    &__search {
+      margin: 0 10px 0 0;
+      .search{
+        height: 25px;
+        border: 0;
+        border-radius: 15px;
+        background: rgba(0,0,0, .16);
+        color: $blanco;
+      }
+    }
+  }
+}
