@@ -880,7 +880,9 @@ body {
     height: 60px;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    /*estilos del menu*/
+    /*estilo del search*/ }
     .header-top__menu {
       display: flex; }
       .header-top__menu .menu-logo {
@@ -910,5 +912,71 @@ body {
         border-radius: 15px;
         background: rgba(0, 0, 0, 0.16);
         color: #fff; }
+        .header-top__search .search:focus {
+          background: #E1E2E4;
+          color: #292929;
+          border: #000; }
+        .header-top__search .search:focus + .icon-search {
+          color: #292929; }
+      .header-top__search .icon-search {
+        position: relative;
+        right: 30px;
+        top: 1px;
+        color: #E1E2E4; }
+
+/*estilos de portafolio*/
+.portafolio {
+  height: 1200px;
+  background: #fff;
+  text-align: center; }
+  .portafolio-titles {
+    margin-top: 55px; }
+    .portafolio-titles__titulo {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      line-height: 0;
+      font-size: 4rem; }
+    .portafolio-titles__subtitulo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 2rem; }
+  .portafolio-option__items {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #E1E2E4;
+    cursor: pointer; }
+    .portafolio-option__items:hover {
+      color: #000; }
+    .portafolio-option__items:active {
+      font-weight: 700; }
+
+/* potafolio gallery*/
+.gallery {
+  margin: 45px 20px 0 20px; }
+
+.img-gallery {
+  max-width: 100%;
+  display: block; }
+
+.masonry-layout {
+  --columns: 1;
+  --gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-gap: var(--gap); }
+  .masonry-layout .masonry-item {
+    margin-bottom: var(--gap); }
+  .masonry-layout.columns-1 {
+    --columns: 1; }
+  .masonry-layout.columns-2 {
+    --columns: 2; }
+  .masonry-layout.columns-3 {
+    --columns: 3; }
+  .masonry-layout.columns-4 {
+    --columns: 4; }
+  .masonry-layout.columns-5 {
+    --columns: 5; }
+  .masonry-layout.columns-6 {
+    --columns: 6; }
 
 /*# sourceMappingURL=styles.css.map */
