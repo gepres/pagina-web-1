@@ -868,6 +868,25 @@ th {
 body {
   background: #E1E2E4; }
 
+/* PORTAFOLIO BOTON*/
+.portafolio-boton {
+  margin-top: 50px; }
+  .portafolio-boton__item {
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #292929;
+    text-decoration: none; }
+    .portafolio-boton__item:hover {
+      color: #E1E2E4; }
+  .portafolio-boton__icons {
+    font-size: 20px;
+    position: relative;
+    top: 5px; }
+
 /*estilos del header*/
 .header {
   height: 500px;
@@ -978,5 +997,42 @@ body {
     --columns: 5; }
   .masonry-layout.columns-6 {
     --columns: 6; }
+
+/*estilos de about-me*/
+.about {
+  height: 500px;
+  background: #292929;
+  display: flex;
+  justify-content: center; }
+  .about-content {
+    align-self: center;
+    text-align: center;
+    margin-top: 40px; }
+    .about-content__subtitulo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      color: rgba(219, 95, 41, 0.3);
+      line-height: 0;
+      font-size: 2rem; }
+    .about-content__titulo {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      color: #E1E2E4; }
+    .about-content__parrafo {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: rgba(225, 226, 228, 0.16);
+      text-align: justify; }
+
+/*estilos cientes*/
+.client {
+  height: 400px;
+  background: url("../img/bg-client.jpg");
+  background-size: cover;
+  max-width: 100%; }
+  .client-negro {
+    height: 400px;
+    background: #000;
+    opacity: 0.4; }
 
 /*# sourceMappingURL=styles.css.map */

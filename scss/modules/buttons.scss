@@ -1,0 +1,25 @@
+/* PORTAFOLIO BOTON*/
+
+.portafolio {
+  &-boton {
+    margin-top: 50px;;
+    &__item {
+      padding: 10px 15px;
+      border-radius: 25px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: $semi-bold;
+      font-size: 1.2rem;
+      color:$blanco;
+      background: $negro-medio;
+      text-decoration: none;
+      &:hover{
+        color: $bg-fondo;
+      }
+    }
+    &__icons {
+      font-size: 20px;
+      position: relative;
+      top:5px;
+    }
+  }
+}

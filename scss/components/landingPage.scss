@@ -108,9 +108,10 @@
 
 /* potafolio gallery*/
 
-.gallery{
+.gallery {
   margin: 45px 20px 0 20px;
 }
+
 .img-gallery {
   max-width: 100%;
   display: block;
@@ -130,5 +131,51 @@
     &.columns-#{$i} {
       --columns: #{$i};
     }
+  }
+}
+
+/*estilos de about-me*/
+
+.about {
+  height: 500px;
+  background: $negro-medio;
+  display: flex;
+  justify-content: center;
+  &-content {
+    align-self: center;
+    text-align: center;
+    margin-top: 40px;
+    &__subtitulo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: $light;
+      color: rgba(219, 95, 41, 0.30);
+      line-height: 0;
+      font-size: 2rem;
+    }
+    &__titulo {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: $bold;
+      color: $bg-fondo;
+    }
+    &__parrafo {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: $regular;
+      color: rgba(225, 226, 228, 0.16);
+      text-align: justify;
+    }
+  }
+}
+
+/*estilos cientes*/
+
+.client {
+  height: 400px;
+  background: url("../img/bg-client.jpg");
+  background-size: cover;
+  max-width: 100%;
+  &-negro {
+    height: 400px;
+    background: #000;
+    opacity: 0.4;
   }
 }
