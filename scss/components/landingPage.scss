@@ -169,13 +169,75 @@
 /*estilos cientes*/
 
 .client {
-  height: 400px;
+  height: 450px;
   background: url("../img/bg-client.jpg");
   background-size: cover;
   max-width: 100%;
+  position: relative;
   &-negro {
-    height: 400px;
+    height: 450px;
     background: #000;
     opacity: 0.4;
+  }
+  &-content {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: -350px;
+    color: $blanco;
+    &__titulo {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: $bold;
+      line-height: 0;
+    }
+    &__subtitulo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: $light;
+      font-size: 2rem;
+      color: $bg-fondo;
+    }
+    &__design {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: $light;
+      font-size: 20px;
+      line-height: 0;
+      margin-top: 70px;
+      color: rgba(225, 226, 228, 0.9);
+      ;
+    }
+  }
+}
+
+.img-paisaje {
+  max-height: 100px;
+  max-width: 100%;
+}
+
+.owl-carousel {
+  margin-top: 60px;
+}
+
+/*estilos del fooder*/
+
+.fooder {
+  height: 200px;
+  background: $negro;
+  text-align: center;
+  &-logo {
+    padding-top: 40px;
+    width: 60px;
+    height: 60px;
+    top: 50px;
+  }
+  &-copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $light;
+    color: rgba(225, 226, 228, 0.16);
+    font-size: 1.3rem;
+  }
+  &-redes a {
+    color: $bg-fondo;
+    cursor: pointer;
+    margin-right: 4px;
   }
 }
