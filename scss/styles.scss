@@ -6,9 +6,11 @@
 // estilo de layouts
 @import "layout/grid";
 
+
 // estilos de base
 @import "base/normalize";
 @import "base/base"; //es bueno poner tu base despues del normalize , por q por cascatada tu codigo le gane y no haya conflictos
+
 
 // estilo de modules
 @import "modules/buttons";
@@ -18,4 +20,9 @@
 @import "modules/owl-theme-carousel";
 
 //estilo componentes
-@import "components/landingPage"
+@import "components/landingPage";
+
+// estilos de estados
+@import "state/media";
+
+

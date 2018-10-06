@@ -34,6 +34,7 @@
           font-family: 'Roboto', sans-serif;
           font-weight: $regular;
           color: $blanco;
+          text-decoration: none;
           text-align: center;
           cursor: pointer;
           &:hover {
@@ -73,9 +74,10 @@
 /*estilos de portafolio*/
 
 .portafolio {
-  height: 1200px;
+  height: auto;
   background: $blanco;
   text-align: center;
+  padding-bottom: 55px;
   &-titles {
     margin-top: 55px;
     &__titulo {

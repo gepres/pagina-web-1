@@ -1197,6 +1197,7 @@ body {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         color: #fff;
+        text-decoration: none;
         text-align: center;
         cursor: pointer; }
         .header-top__menu .menu-link:hover {
@@ -1223,9 +1224,10 @@ body {
 
 /*estilos de portafolio*/
 .portafolio {
-  height: 1200px;
+  height: auto;
   background: #fff;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 55px; }
   .portafolio-titles {
     margin-top: 55px; }
     .portafolio-titles__titulo {
@@ -1362,5 +1364,71 @@ body {
     color: #E1E2E4;
     cursor: pointer;
     margin-right: 4px; }
+
+/* Media Queries
+ÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇô */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+/* Larger than mobile */
+@media (max-width: 350px) {
+  .container {
+    width: 100%; } }
+/* Larger than phablet (also point when grid becomes active) */
+@media (max-width: 550px) {
+  .container {
+    width: 100%; }
+
+  .about-content__parrafo {
+    margin: 10px; } }
+/* Larger than tablet */
+@media (max-width: 750px) {
+  .container {
+    width: 100%; }
+
+  .header {
+    height: 300px; }
+    .header-top {
+      width: auto;
+      justify-content: center; }
+      .header-top__search {
+        display: none; }
+
+  .gallery .img-gallery-10 {
+    display: none; }
+  .gallery .img-gallery-11 {
+    display: none; }
+  .gallery .img-gallery-12 {
+    display: none; }
+  .gallery .img-gallery-9 {
+    display: none; }
+
+  .client {
+    height: 400px; }
+    .client-negro {
+      height: 400px; }
+    .client-content__design {
+      margin-top: 150px; }
+
+  .img-paisaje {
+    max-height: 60px;
+    max-width: 50%; }
+
+  .item {
+    width: auto; }
+
+  .owl-dot {
+    display: none !important; }
+
+  .owl-next {
+    display: none !important; }
+
+  .owl-prev {
+    display: none !important; } }
+/* Larger than desktop */
+/* Larger than Desktop HD */
 
 /*# sourceMappingURL=styles.css.map */

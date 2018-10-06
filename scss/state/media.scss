@@ -1,0 +1,102 @@
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+/* Larger than mobile */
+
+@media (max-width: 350px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (max-width: 550px) {
+  .container {
+    width: 100%;
+  }
+  .about-content__parrafo {
+    margin: 10px;
+  }
+}
+
+/* Larger than tablet */
+
+@media (max-width: 750px) {
+  .container {
+    width: 100%;
+  }
+  .header {
+    height: 300px;
+    &-top {
+      width: auto;
+      justify-content: center; // &__menu {
+      //   .menu {
+      //     &-nav {
+      //     }
+      //   }
+      // }
+      &__search {
+        display: none;
+      }
+    }
+  } // portafolio
+  .gallery {
+    .img-gallery-10 {
+      display: none;
+    }
+    .img-gallery-11 {
+      display: none;
+    }
+    .img-gallery-12 {
+      display: none;
+    }
+    .img-gallery-9 {
+      display: none;
+    }
+  } //client
+  .client {
+    height: 400px;
+    &-negro {
+      height: 400px;
+    }
+    &-content{
+      &__design{
+        margin-top:150px;
+      }
+    }
+  }
+  .img-paisaje {
+    max-height: 60px;
+    max-width: 50%;
+  }
+  .item {
+    width: auto;
+  }
+  .owl {
+    &-dot {
+      display: none !important;
+    }
+  }
+  .owl-next {
+    display: none !important;
+  }
+  .owl-prev {
+    display: none !important;
+  }
+}
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {}
