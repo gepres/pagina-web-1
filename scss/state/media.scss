@@ -19,13 +19,12 @@
     height: 300px;
     &-top {
       width: auto;
-      justify-content: center; 
+      justify-content: center;
       &__search {
         display: none;
       }
     }
-  } 
-  // portafolio
+  } // portafolio
   .gallery {
     .img-gallery-10 {
       display: none;
@@ -39,8 +38,7 @@
     .img-gallery-9 {
       display: none;
     }
-  }
-   //client
+  } //client
   .client {
     height: 400px;
     &-negro {
@@ -117,6 +115,15 @@
           }
           &-items {
             padding: 20px 0 0 0;
+            border-bottom: 2px solid rgba(225, 226, 228, .5);
+          }
+          &-link {
+            &:hover {
+              color: $negro-medio;
+            }
+          }
+          &-redes-mobile {
+            display: block;
           }
         }
       }
@@ -136,9 +143,11 @@
     &-option {
       height: 100px;
       &__items {
-        color: $blanco;
         display: none;
       }
+    }
+    &-boton {
+      display: none;
     }
   }
   .gallery {
@@ -162,7 +171,7 @@
   .client {
     height: 300px;
     &-negro {
-      height: 300px ;
+      height: 300px;
     }
     &-content {
       top: -250px;
@@ -181,7 +190,8 @@
   .img-paisaje {
     max-height: 60px;
     max-width: 55%;
-  } //fooder
+  } 
+  //fooder
   .fooder {
     height: 150px;
     &-logo {

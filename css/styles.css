@@ -1204,6 +1204,8 @@ body {
         cursor: pointer; }
         .header-top__menu .menu-link:hover {
           color: #E1E2E4; }
+      .header-top__menu .menu-redes-mobile {
+        display: none; }
     .header-top__search {
       margin: 0 10px 0 0; }
       .header-top__search .search {
@@ -1250,8 +1252,6 @@ body {
       color: #000; }
     .portafolio-option__items:active {
       font-weight: 700; }
-  .portafolio-boton {
-    display: none; }
 
 /* potafolio gallery*/
 .gallery {
@@ -1371,12 +1371,6 @@ body {
 
 /* Media Queries
 ÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇôÔÇô */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
 /* Larger than phablet (also point when grid becomes active) */
 @media (max-width: 550px) {
   .about-content__parrafo {
@@ -1463,7 +1457,12 @@ there.
           display: block;
           margin-left: 0; }
         .header-top__menu .menu-items {
-          padding: 20px 0 0 0; }
+          padding: 20px 0 0 0;
+          border-bottom: 2px solid rgba(225, 226, 228, 0.5); }
+        .header-top__menu .menu-link:hover {
+          color: #292929; }
+        .header-top__menu .menu-redes-mobile {
+          display: block; }
 
   .portafolio {
     padding-top: 20px;
@@ -1475,8 +1474,9 @@ there.
     .portafolio-option {
       height: 100px; }
       .portafolio-option__items {
-        color: #fff;
         display: none; }
+    .portafolio-boton {
+      display: none; }
 
   .gallery {
     margin-top: 20px; }

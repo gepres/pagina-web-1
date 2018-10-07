@@ -44,6 +44,9 @@
             color: $bg-fondo;
           }
         }
+        &-redes-mobile{
+          display: none;
+        }
       }
     }
     /*estilo del search*/
@@ -108,9 +111,6 @@
         font-weight: $bold;
       }
     }
-  }
-  &-boton{
-    display: none;
   }
 }
 
