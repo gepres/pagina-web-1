@@ -13,6 +13,9 @@
     justify-content: space-between;
     align-items: center;
     /*estilos del menu*/
+    &__nav{
+      display: none;
+    }
     &__menu {
       display: flex;
       .menu {
@@ -105,6 +108,9 @@
         font-weight: $bold;
       }
     }
+  }
+  &-boton{
+    display: none;
   }
 }
 

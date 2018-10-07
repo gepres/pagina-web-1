@@ -44,7 +44,7 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 100%;
     padding: 0; } }
 /* For devices larger than 550px */
 @media (min-width: 550px) {
@@ -1180,6 +1180,8 @@ body {
     align-items: center;
     /*estilos del menu*/
     /*estilo del search*/ }
+    .header-top__nav {
+      display: none; }
     .header-top__menu {
       display: flex; }
       .header-top__menu .menu-logo {
@@ -1248,6 +1250,8 @@ body {
       color: #000; }
     .portafolio-option__items:active {
       font-weight: 700; }
+  .portafolio-boton {
+    display: none; }
 
 /* potafolio gallery*/
 .gallery {
@@ -1373,15 +1377,8 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-/* Larger than mobile */
-@media (max-width: 350px) {
-  .container {
-    width: 100%; } }
 /* Larger than phablet (also point when grid becomes active) */
 @media (max-width: 550px) {
-  .container {
-    width: 100%; }
-
   .about-content__parrafo {
     margin: 10px; } }
 /* Larger than tablet */
@@ -1411,11 +1408,11 @@ there.
     .client-negro {
       height: 400px; }
     .client-content__design {
-      margin-top: 150px; }
+      margin-top: 130px; }
 
   .img-paisaje {
-    max-height: 60px;
-    max-width: 50%; }
+    max-height: 90px;
+    max-width: 90%; }
 
   .item {
     width: auto; }
@@ -1428,6 +1425,95 @@ there.
 
   .owl-prev {
     display: none !important; } }
+/* Larger than mobile */
+@media (max-width: 400px) {
+  .container {
+    padding: 0; }
+
+  .header {
+    background: none;
+    height: 0 !important; }
+    .header-top {
+      display: block; }
+      .header-top__nav {
+        display: block;
+        width: 100vw;
+        height: 60px;
+        background: url("../img/header-img.jpg");
+        background-size: cover; }
+        .header-top__nav .bars {
+          color: #E1E2E4;
+          position: relative;
+          top: 20px;
+          left: 20px;
+          text-decoration: none;
+          font-size: 2rem; }
+      .header-top__menu {
+        display: block;
+        position: fixed;
+        transform: translateX(-100%);
+        background: rgba(41, 41, 41, 0.9);
+        height: 100vh;
+        width: 50%;
+        z-index: 10;
+        text-align: center; }
+        .header-top__menu:target {
+          transform: translate(0, 0); }
+        .header-top__menu .menu-nav {
+          display: block;
+          margin-left: 0; }
+        .header-top__menu .menu-items {
+          padding: 20px 0 0 0; }
+
+  .portafolio {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .portafolio-titles__titulo {
+      font-size: 3rem; }
+    .portafolio-titles__subtitulo {
+      font-size: 1.5rem; }
+    .portafolio-option {
+      height: 100px; }
+      .portafolio-option__items {
+        color: #fff;
+        display: none; }
+
+  .gallery {
+    margin-top: 20px; }
+
+  .about {
+    height: 400px; }
+    .about-content {
+      margin-top: 10px; }
+      .about-content__subtitulo {
+        font-size: 1.5rem; }
+      .about-content__titulo {
+        font-size: 3rem; }
+      .about-content__parrafo {
+        margin: 25px; }
+
+  .client {
+    height: 300px; }
+    .client-negro {
+      height: 300px; }
+    .client-content {
+      top: -250px; }
+      .client-content__titulo {
+        font-size: 3rem; }
+      .client-content__subtitulo {
+        font-size: 1.5rem; }
+      .client-content__design {
+        font-size: 16px;
+        margin-top: 70px; }
+
+  .img-paisaje {
+    max-height: 60px;
+    max-width: 55%; }
+
+  .fooder {
+    height: 150px; }
+    .fooder-logo {
+      padding-top: 10px; } }
 /* Larger than desktop */
 /* Larger than Desktop HD */
 
