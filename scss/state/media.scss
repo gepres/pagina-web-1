@@ -1,13 +1,6 @@
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
 /* Larger than phablet (also point when grid becomes active) */
 
 @media (max-width: 550px) {
@@ -26,17 +19,13 @@ there.
     height: 300px;
     &-top {
       width: auto;
-      justify-content: center; // &__menu {
-      //   .menu {
-      //     &-nav {
-      //     }
-      //   }
-      // }
+      justify-content: center; 
       &__search {
         display: none;
       }
     }
-  } // portafolio
+  } 
+  // portafolio
   .gallery {
     .img-gallery-10 {
       display: none;
@@ -50,7 +39,8 @@ there.
     .img-gallery-9 {
       display: none;
     }
-  } //client
+  }
+   //client
   .client {
     height: 400px;
     &-negro {
@@ -197,8 +187,6 @@ there.
     &-logo {
       padding-top: 10px;
     }
-    &-copyright {}
-    &-redes a {}
   }
 }
 
